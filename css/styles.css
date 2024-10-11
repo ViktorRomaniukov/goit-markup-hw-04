@@ -1,0 +1,302 @@
+/* Global styles */
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.link:hover,
+.link:focus,
+.link-address a:hover,
+.link-address a:focus {
+  color: #404bbf;
+}
+
+/* Styles header */
+
+.header-section {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.container-header,
+.container-nav,
+.linkaddress,
+.linknav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.link,
+.container-nav .logo {
+  padding: 24px 0;
+}
+
+.container-nav {
+  padding-left: 8px;
+}
+
+.container-nav .logo {
+  margin-right: 76px;
+}
+
+.link-address {
+  padding-right: 8px;
+}
+
+.linknav {
+  gap: 40px;
+}
+
+.linkaddress {
+  gap: 40px;
+}
+
+/* Styles main */
+
+/* Secnion Banner */
+
+.banner {
+  padding: 188px 0;
+  background-color: #2e2f42;
+  height: 600px;
+}
+
+.banner-conteiner {
+  margin-bottom: 120px;
+}
+
+.page-title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  max-width: 496px;
+  margin: 0 auto 48px;
+}
+
+.button {
+  display: block;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: none;
+  margin: 0 auto;
+  border-radius: 4px;
+  min-width: 169px;
+  height: 56px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+/* Company activities */
+
+.section-activities {
+  padding: 120px 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+h2 {
+  color: #2e2f42;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.section-heading {
+  color: #2e2f42;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.menu-list-text {
+  width: calc((100% - 72px) / 4);
+}
+
+/* Team Info */
+
+.employees {
+  background-color: #f4f4fd;
+  padding: 120px 0;
+}
+
+.menu-title {
+  margin-bottom: 72px;
+}
+
+.info-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 24px;
+}
+
+.gallery {
+  background-color: #ffffff;
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.galleri-box {
+  padding: 32px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #2e2f42;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.link-address {
+  font-style: normal;
+}
+
+.link-address a {
+  color: #434455;
+  font-weight: 400;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #434455;
+  letter-spacing: 0.02em;
+}
+
+/* Portfolio */
+
+.portfolio {
+  padding: 120px 0;
+}
+
+.portfolio-conteiner > h2 {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.conteiner-portfolio-list .section-heading {
+  text-align: left;
+}
+
+.portfolio-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.portfolio-list li {
+  width: calc((100% - 48px) / 3);
+}
+
+.conteiner-portfolio-list {
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  padding: 32px 16px;
+}
+
+/* Lower level */
+
+.page-footer {
+  background-color: #2e2f42;
+  padding: 100px 0;
+  background-color: #2e2f42;
+  height: 312px;
+}
+
+.container .logo-link {
+  margin-bottom: 16px;
+}
+
+button:hover,
+button:focus {
+  background-color: #404bbf;
+}
+
+.text-footer {
+  color: #f4f4fd;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  max-width: 264px;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #4d5ae5;
+  display: inline-block;
+}
+
+.logo-nav {
+  color: #2e2f42;
+}
+
+.logo-footer {
+  color: #f4f4fd;
+}
