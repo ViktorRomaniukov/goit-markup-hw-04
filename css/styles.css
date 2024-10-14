@@ -66,6 +66,21 @@ img {
   margin-right: 76px;
 }
 
+.box-link {
+  position: relative;
+}
+
+.box-link:active::before {
+  display: inline-block;
+  content: "";
+  border-radius: 2px;
+  width: 100%;
+  height: 4px;
+  background: #404bbf;
+  position: absolute;
+  bottom: 0;
+}
+
 .link-address {
   padding-right: 8px;
 }
@@ -254,8 +269,37 @@ a {
   row-gap: 48px;
 }
 
-.portfolio-list li {
+.box-overley {
+  position: relative;
+  overflow: hidden;
+}
+
+.overley {
+  position: absolute;
+  padding: 40px 32px 0 32px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms ease-in-out;
+  color: #f4f4fd;
+  background: #4d5ae5;
+}
+
+.portfolio-list-gallery:hover .overley {
+  transform: translateY(0);
+}
+
+.portfolio-list-gallery {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #fff;
   width: calc((100% - 48px) / 3);
+}
+
+.portfolio-list-gallery:hover {
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .conteiner-portfolio-list {
