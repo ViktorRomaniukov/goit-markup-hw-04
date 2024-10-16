@@ -68,9 +68,10 @@ img {
 
 .box-link {
   position: relative;
+  color: #404bbf;
 }
 
-.box-link:active::after {
+.box-link::after {
   display: inline-block;
   content: "";
   border-radius: 2px;
@@ -170,6 +171,16 @@ h2 {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
+}
+.container-icons {
+  display: flex;
+  justify-content: center;
+  background: #f4f4fd;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .section-heading {
