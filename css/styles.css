@@ -110,10 +110,8 @@ a {
 .banner {
   padding: 188px 0;
   background-color: #2e2f42;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)),
     url(../images/people-office-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -123,8 +121,7 @@ a {
   margin: 0 auto;
 }
 
-.banner-conteiner {
-}
+.banner-conteiner {}
 
 .page-title {
   color: #ffffff;
@@ -182,6 +179,7 @@ h2 {
   text-transform: capitalize;
   text-align: center;
 }
+
 .container-icons {
   display: flex;
   justify-content: center;
@@ -260,16 +258,35 @@ h2 {
   letter-spacing: 0.02em;
 }
 
-.social-container {
+.galleri-box>.text {
+  padding-bottom: 8px;
 }
+
 .social-list {
+  display: flex;
+  justify-content: center;
 }
+
 .list-link {
+  display: flex;
+  justify-content: center;
+  width: calc((100% - 24px) / 4);
 }
+
 .link-icons {
-  display: inline-block;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #4D5AE5;
+  border-radius: 50%;
 }
+
 .social-icons {
+  fill: white;
 }
 
 /* Portfolio */
